@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Ivan Zorin</h1>
 <h3 align="center">A fullstack developer from Russia</h3>
 
-<p align="center"> <a href="https://github.com/localzet"><img src="https://github-profile-trophy.vercel.app/?username=localzet&row=1&column=7&theme=darkhub&no-frame=true" alt="localzet" /></a> </p>
+<p align="center"><a href="https://github.com/localzet"><img src="https://github-profile-trophy.vercel.app/?username=localzet&row=1&column=8&theme=darkhub&no-frame=true" alt="localzet" /></a></p>
 
 - 🔭 I’m currently working on [Async PHP Server](https://github.com/localzet/Server)
 
