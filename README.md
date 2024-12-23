@@ -3,6 +3,11 @@
 
 <p align="center"><a href="https://github.com/localzet"><img src="https://github-profile-trophy.vercel.app/?username=localzet&row=1&column=8&theme=darkhub&no-frame=true" alt="localzet" /></a></p>
 
+<p align="center">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=localzet&show_icons=true&theme=dark" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=localzet&layout=compact&langs_count=8&card_width=480&theme=dark&hide=HTML,Shell" />
+</p>
+
 - 🔭 I’m currently working on [Async PHP Server](https://github.com/localzet/Server)
 
 - 👯 I’m looking to collaborate on [Triangle Web Framework](https://github.com/Triangle-org)
