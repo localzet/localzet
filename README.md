@@ -5,7 +5,7 @@
 
 <p align="center">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=localzet&show_icons=true&theme=dark" />
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=localzet&layout=compact&langs_count=8&card_width=360&theme=dark&hide=HTML,Shell" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=localzet&layout=compact&langs_count=8&card_width=320&theme=dark&hide=HTML,Shell" />
 </p>
 
 - 🔭 I’m currently working on [Async PHP Server](https://github.com/localzet/Server)
