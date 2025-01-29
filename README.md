@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Ivan Zorin</h1>
-<h3 align="center">A fullstack developer from Russia</h3>
+<h3 align="center">A passionate Fullstack Developer from Russia, dedicated to crafting efficient and scalable software solutions</h3>
 
 <p align="center"><a href="https://github.com/localzet"><img src="https://github-profile-trophy.vercel.app/?username=localzet&row=1&column=8&theme=darkhub&no-frame=true" alt="localzet" /></a></p>
 
@@ -8,65 +8,94 @@
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=localzet&layout=compact&langs_count=8&card_width=320&theme=dark&hide=HTML,Shell" />
 </p>
 
-- 🔭 I’m currently working on [Async PHP Server](https://github.com/localzet/Server)
+### Projects
+- 🔭 [**Async PHP Server**](https://github.com/localzet/Server)
+  - An asynchronous PHP server designed for high-performance applications.
+  - PHP, Async, Docker.
+  
+- 👯 [**Triangle Web Framework**](https://github.com/Triangle-org)
+  - A lightweight and efficient web framework for building web applications.
+  - PHP, MVC, MySQL.
 
-- 👯 I’m looking to collaborate on [Triangle Web Framework](https://github.com/Triangle-org)
+- 🔧 [**Localzet Tunnel**](https://github.com/localzet/tunnel)
+  - A utility for creating secure tunnels and proxy servers.
+  - PHP, Networking, Security.
 
-- 👨‍💻 All of my projects are available at [https://www.localzet.com](https://www.localzet.com)
+- 🌟 [**Localzet Proxy**](https://github.com/localzet/proxy)
+  - A high-performance proxy server with support for various protocols.
+  - PHP, Async, Security.
 
-- 📝 I regularly write articles on [https://t.me/localzet_dev](https://t.me/localzet_dev)
+### Connect with me:
+<a href="https://vk.com/localzet" target="blank"><img src="https://img.shields.io/badge/VK-0077ff?style=for-the-badge&logo=vk&logoColor=white" alt="Иван Зорин" /></a>
+<a href="https://t.me/localzet" target="blank"><img src="https://img.shields.io/badge/Telegram-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="@localzet" /></a>
+<a href="https://instagram.com/localzet" target="blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="localzet" /></a>
+<a href="https://fb.com/localzet" target="blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="localzet" /></a>
+<a href="https://twitter.com/localzet" target="blank"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="localzet" /></a>
+<a href="https://medium.com/@localzet" target="blank"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="@localzet" /></a>
+<a href="https://dev.to/localzet" target="blank"><img src="https://img.shields.io/badge/DEV.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="localzet" /></a>
 
-- 🌱 I’m currently learning **Async PHP, Docker, React**
+### Tech Stack
+**Programming Languages**: 
+![C/C++/C#](https://img.shields.io/badge/-C/C++-black?style=flat-square&logo=c)
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
+![Go](https://img.shields.io/badge/-Go-black?style=flat-square&logo=go)
+![PHP](https://img.shields.io/badge/-PHP-black?style=flat-square&logo=php)
+![Hack](https://img.shields.io/badge/-Hack-black?style=flat-square&logo=hack)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
 
-- 📫 How to reach me **creator@localzet.com**
+**Frontend Development**: 
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![Vue](https://img.shields.io/badge/-Vue.js-black?style=flat-square&logo=vue.js)
+![Angular](https://img.shields.io/badge/-Angular-black?style=flat-square&logo=angular)
+![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat-square&logo=next.js)
+![Nuxt.js](https://img.shields.io/badge/-Nuxt.js-black?style=flat-square&logo=nuxt)
+![MDX](https://img.shields.io/badge/-MDX-black?style=flat-square&logo=mdx)
+![HTML](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5)
+![CSS](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3)
+![Sass](https://img.shields.io/badge/-Sass-black?style=flat-square&logo=sass)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-black?style=flat-square&logo=bootstrap)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-black?style=flat-square&logo=tailwindcss)
+![Capacitor](https://img.shields.io/badge/-Capacitor-black?style=flat-square&logo=capacitor)
+![Webpack](https://img.shields.io/badge/-Webpack-black?style=flat-square&logo=webpack)
 
+**Backend Development**: 
+![Node.js](https://img.shields.io/badge/-Node.js-black?style=flat-square&logo=Node.js)
+![NestJS](https://img.shields.io/badge/-NestJS-black?style=flat-square&logo=nestjs)
+![Express.js](https://img.shields.io/badge/-Express.js-black?style=flat-square&logo=express)
+![Flask](https://img.shields.io/badge/-Flask-black?style=flat-square&logo=flask)
+![Django](https://img.shields.io/badge/-Django-black?style=flat-square&logo=django)
+![Symfony](https://img.shields.io/badge/-Symfony-black?style=flat-square&logo=symfony)
+![Laravel](https://img.shields.io/badge/-Laravel-black?style=flat-square&logo=laravel)
+![CodeIgniter](https://img.shields.io/badge/-CodeIgniter-black?style=flat-square&logo=codeigniter)
+![HHVM](https://img.shields.io/badge/-HHVM-black?style=flat-square&logo=hhvm)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
- <a href="https://vk.com/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/vk.svg" alt="Иван Зорин" height="30" width="40" /></a>
-<a href="https://t.me/localzet" target="blank"><img align="center" src="https://www.svgrepo.com/download/343522/telegram-communication-chat-interaction-network-connection.svg" alt="@localzet" height="30" width="40" /></a>
-<a href="https://twitter.com/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="localzet" height="30" width="40" /></a>
-<a href="https://instagram.com/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="localzet" height="30" width="40" /></a>
-<a href="https://fb.com/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="localzet" height="30" width="40" /></a>
-<a href="https://medium.com/@localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@localzet" height="30" width="40" /></a>
-<a href="https://dev.to/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="localzet" height="30" width="40" /></a>
-<a href="https://kaggle.com/localzet" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="localzet" height="30" width="40" /></a>
-</p>
+**Database Management**: 
+![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+![SQLite](https://img.shields.io/badge/-SQLite-black?style=flat-square&logo=sqlite)
+![MS SQL](https://img.shields.io/badge/-MS%20SQL-black?style=flat-square&logo=sql-server)
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/></a> 
-  <a href="https://cordova.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg" alt="apachecordova" width="40" height="40"/></a> 
-  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/></a> 
-  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/></a> 
-  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/></a> 
-  <a href="https://codeigniter.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40" height="40"/></a> 
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a> 
-  <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/></a> 
-  <a href="https://www.electronjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" alt="electron" width="40" height="40"/></a> 
-  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a> 
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/></a>
-  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></a> 
-  <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/></a> 
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a> 
-  <a href="https://gulpjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/></a> 
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a> 
-  <a href="https://ionicframework.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" alt="ionic" width="40" height="40"/></a> 
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a> 
-  <a href="https://karma-runner.github.io/latest/index.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg" alt="karma" width="40" height="40"/></a> 
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a> 
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a> 
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a> 
-  <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/></a> 
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
-  <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/></a> 
-  <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/></a> 
-  <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/></a> 
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a> 
-  <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/></a> 
-  <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/></a> 
-  <a href="https://symfony.com" target="_blank" rel="noreferrer"> <img src="https://symfony.com/logos/symfony_black_03.svg" alt="symfony" width="40" height="40"/></a> 
-  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/></a> 
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/></a> 
-  <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/></a> 
-</p>
+**DevOps**: 
+![Nginx](https://img.shields.io/badge/-Nginx-black?style=flat-square&logo=nginx)
+![Apache](https://img.shields.io/badge/-Apache-black?style=flat-square&logo=apache)
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
+![Portainer](https://img.shields.io/badge/-Portainer-black?style=flat-square&logo=portainer)
+![Grafana](https://img.shields.io/badge/-Grafana-black?style=flat-square&logo=grafana)
+![Prometheus](https://img.shields.io/badge/-Prometheus-black?style=flat-square&logo=prometheus)
+![Alertmanager](https://img.shields.io/badge/-Alertmanager-black?style=flat-square&logo=prometheus)
+![Node Exporter](https://img.shields.io/badge/-Node%20Exporter-black?style=flat-square&logo=prometheus)
+
+**Tools**: 
+![Postman](https://img.shields.io/badge/-Postman-black?style=flat-square&logo=postman)
+![Figma](https://img.shields.io/badge/-Figma-black?style=flat-square&logo=figma)
+![Firebase](https://img.shields.io/badge/-Firebase-black?style=flat-square&logo=firebase)
+![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-black?style=flat-square&logo=googlecloud)
+![Tor](https://img.shields.io/badge/-Tor-black?style=flat-square&logo=torproject)
+
+### Currently Learning
+![Rust](https://img.shields.io/badge/-Rust-black?style=flat-square&logo=rust)
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
+![Portainer](https://img.shields.io/badge/-Portainer-black?style=flat-square&logo=portainer)
+![Minio](https://img.shields.io/badge/-Minio-black?style=flat-square&logo=minio)
