@@ -62,6 +62,7 @@ Here are some of the projects I'm currently focused on. Many of them are part of
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Pascal](https://img.shields.io/badge/pascal-%23E44D2E.svg?style=for-the-badge&logo=freepascal&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
 
 **Frontend Development**  
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -93,15 +94,17 @@ Here are some of the projects I'm currently focused on. Many of them are part of
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-%23EF4223.svg?style=for-the-badge&logo=codeIgniter&logoColor=white)
 ![Yii2](https://img.shields.io/badge/Yii2-%2340B3B3.svg?style=for-the-badge&logo=yii&logoColor=white)
 ![Laminas](https://img.shields.io/badge/Laminas-%23E44D2E?style=for-the-badge&logo=laminas&logoColor=white)
+![PSR Standards](https://img.shields.io/badge/PSR-Standards-6C2EB2?style=for-the-badge&logo=php&logoColor=white)
 
 **Databases & Message Brokers**  
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-8A2BE2?style=for-the-badge&logo=qdrant&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![MicrosoftSQLServer](https://img.shields.io/badge/MS%20SQL-CC2927?style=for-the-badge&logo=ms%20sql&logoColor=white)
+![MicrosoftSQLServer](https://img.shields.io/badge/MS%20SQL-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 
 **DevOps & Infrastructure**  
@@ -116,3 +119,4 @@ Here are some of the projects I'm currently focused on. Many of them are part of
 ![Logstash](https://img.shields.io/badge/Logstash-005571?style=for-the-badge&logo=logstash&logoColor=white)
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
 ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
