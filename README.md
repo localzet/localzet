@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Ivan Zorin</h1>
 <h3 align="center">A passionate developer, dedicated to crafting efficient and scalable software solutions</h3>
-<h3 align="center">CEO of Localzet Group</h3>
+<!-- <h3 align="center">CEO of Localzet Group</h3> -->
 
 <!-- <p align="center">
     <a href="https://github.com/localzet">
