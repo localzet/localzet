@@ -4,10 +4,10 @@ on:
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - master
+
+concurrency:
+  group: profile-summary-cards
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -19,11 +19,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
         with:
           USERNAME: localzet
           BRANCH_NAME: main
           UTC_OFFSET: 3
+          AUTO_PUSH: true
