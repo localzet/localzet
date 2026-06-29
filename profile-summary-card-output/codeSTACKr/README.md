@@ -52,3 +52,13 @@
 ```
 
     
+
+---
+
+![](./4-productive-time.svg)
+
+```
+![](https://raw.githubusercontent.com/localzet/localzet/main/profile-summary-card-output/codeSTACKr/4-productive-time.svg)
+```
+
+    
