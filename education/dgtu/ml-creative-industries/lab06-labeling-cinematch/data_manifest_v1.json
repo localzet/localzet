@@ -1,0 +1,90 @@
+{
+  "version": "cinematch-labels-v1.0.0",
+  "dataset": "GroupLens MovieLens Latest Small (generated 2018-09-26)",
+  "provenance": "Public GitHub mirror blob content read and audited via authenticated GitHub connector, 2026-11-08",
+  "primary_source": "https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html",
+  "mirror": "https://github.com/smanihwr/ml-latest-small",
+  "input_git_blob_sha1": {
+    "movies.csv": "2c1b2e74fe24d0fc851aa9745702fcd7777f690a",
+    "ratings.csv": "51974adb19938bda0e00b2d8c051438fb33893f0",
+    "tags.csv": "224e0c167e6cdd71ec4c6fd9da208ee5a286caaf",
+    "links.csv": "d5ccfdf196ebe5b7bbd09d505ea8ca263ecc33ae"
+  },
+  "raw": {
+    "movies": 9742,
+    "ratings": 100836,
+    "tags": 3683,
+    "links": 9742,
+    "users": 610
+  },
+  "clean": {
+    "valid_rating_rows": 100836,
+    "excluded_rows": 0,
+    "duplicate_user_movie_pairs": 0,
+    "orphan_ratings": 0,
+    "users_ineligible_for_temporal_split": 0
+  },
+  "label_v1_rule": {
+    "0": "0.5 <= rating < 3.0",
+    "1": "3.0 <= rating < 4.0",
+    "2": "4.0 <= rating <= 5.0",
+    "unjudged": "missing rating (not label 0)"
+  },
+  "counts": {
+    "all": {
+      "0": 19073,
+      "1": 33183,
+      "2": 48580,
+      "total": 100836
+    },
+    "train": {
+      "0": 11255,
+      "1": 20098,
+      "2": 30717,
+      "total": 62070
+    },
+    "validation": {
+      "0": 3804,
+      "1": 6633,
+      "2": 8630,
+      "total": 19067
+    },
+    "test": {
+      "0": 4014,
+      "1": 6452,
+      "2": 9233,
+      "total": 19699
+    }
+  },
+  "split": {
+    "strategy": "per-user chronological timestamp groups; ~60/20/20",
+    "ineligible_users": 0,
+    "overlap_user_timestamp": 0,
+    "overlap_user_movie": 0
+  },
+  "features": {
+    "train_only_unique_movie_documents": 7034,
+    "idf_genres_count": 19,
+    "idf_ignores_validation_and_test": true
+  },
+  "pilot": {
+    "observations": 12,
+    "all_from_train": true,
+    "labels_per_grade": {
+      "0": 4,
+      "1": 4,
+      "2": 4
+    },
+    "agreement_between_two_code_implementations": "12/12",
+    "full_source_rule_equivalence": "100836/100836",
+    "human_annotators": 0,
+    "human_agreement_not_measured": true
+  },
+  "limits": [
+    "No second independent human annotator",
+    "Ratings are not a direct user query relevance judgement",
+    "No known per-movie availability timestamp",
+    "CSV with user IDs intentionally excluded from public repository"
+  ],
+  "local_preparation_status": "Python implementation passed five isolated unit tests; the full-file audit/counts in this manifest were computed via GitHub blob data, not from a local python run."
+}
