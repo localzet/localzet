@@ -1,14 +1,13 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: __tmp_cinematch_lab6_pilot_labels_v1.csv>index,pilot_id,source_row,film,rating,label_v1,independent_code_label,split,status
-0,R01,9509,"Truth About Cats & Dogs, The (1996)",4.5,2,2,train,agreement
-1,R02,10414,Little Women (1994),2.0,0,0,train,agreement
-2,R03,10902,U-571 (2000),3.5,1,1,train,agreement
-3,R04,35193,"Lock, Stock & Two Smoking Barrels (1998)",5.0,2,2,train,agreement
-4,R05,39161,300 (2007),3.5,1,1,train,agreement
-5,R06,42041,Airplane! (1980),1.0,0,0,train,agreement
-6,R07,62177,Arsenic and Old Lace (1944),5.0,2,2,train,agreement
-7,R08,63697,Legally Blonde (2001),3.0,1,1,train,agreement
-8,R09,66243,"Italian Job, The (2003)",2.5,0,0,train,agreement
-9,R10,89429,Shine (1996),4.0,2,2,train,agreement
-10,R11,91018,Lean on Me (1989),3.5,1,1,train,agreement
-11,R12,93268,Repo Man (1984),2.5,0,0,train,agreement
+pilot_id,source_row,film,rating,label_v1,independent_code_label,split,status
+R01,9509,"Truth About Cats & Dogs, The (1996)",4.5,2,2,train,agreement
+R02,10414,Little Women (1994),2.0,0,0,train,agreement
+R03,10902,U-571 (2000),3.5,1,1,train,agreement
+R04,35193,"Lock, Stock & Two Smoking Barrels (1998)",5.0,2,2,train,agreement
+R05,39161,300 (2007),3.5,1,1,train,agreement
+R06,42041,Airplane! (1980),1.0,0,0,train,agreement
+R07,62177,Arsenic and Old Lace (1944),5.0,2,2,train,agreement
+R08,63697,Legally Blonde (2001),3.0,1,1,train,agreement
+R09,66243,"Italian Job, The (2003)",2.5,0,0,train,agreement
+R10,89429,Shine (1996),4.0,2,2,train,agreement
+R11,91018,Lean on Me (1989),3.5,1,1,train,agreement
+R12,93268,Repo Man (1984),2.5,0,0,train,agreement
