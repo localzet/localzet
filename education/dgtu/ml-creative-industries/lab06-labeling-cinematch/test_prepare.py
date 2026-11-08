@@ -2,10 +2,12 @@
 from __future__ import annotations
 
 import unittest
+from unittest.mock import patch
 from copy import deepcopy
 from prepare_dataset import (
     assert_safe_split, chronological_split, clean_ratings,
     grade, independent_grade, pilot, train_only_idf,
+    git_blob_sha, retrieve, verify_source, DATA_FILES,
 )
 
 class PreparationTests(unittest.TestCase):
@@ -66,6 +68,55 @@ class PreparationTests(unittest.TestCase):
         self.assertEqual(len(labels),12)
         self.assertEqual([sum(x["label_v1"] == g for x in labels) for g in (0,1,2)],[4,4,4])
         self.assertTrue(all(x["source_row"] != 99 for x in labels))
+
+
+    def fixture_files(self):
+        return {
+            "movies.csv": b"movieId,title,genres\n1,Example (2000),Drama\n",
+            "ratings.csv": b"userId,movieId,rating,timestamp\n1,1,4.0,101\n",
+            "tags.csv": b"userId,movieId,tag,timestamp\n",
+            "links.csv": b"movieId,imdbId,tmdbId\n",
+        }
+
+    def test_source_sha_rejects_corruption(self):
+        files = self.fixture_files()
+        expected = {name: git_blob_sha(blob) for name, blob in files.items()}
+        with patch.dict("prepare_dataset.GIT_BLOBS", expected):
+            verify_source(files, "fixture")
+            wrong = dict(files, **{"ratings.csv": files["ratings.csv"] + b"\n"})
+            with self.assertRaisesRegex(ValueError, "Контрольная сумма"):
+                verify_source(wrong, "fixture")
+
+    def test_retrieve_prefers_fixed_mirror(self):
+        files = self.fixture_files()
+        expected = {name: git_blob_sha(blob) for name, blob in files.items()}
+
+        class Response:
+            def __init__(self, payload):
+                self.payload = payload
+            def __enter__(self):
+                return self
+            def __exit__(self, *args):
+                return False
+            def read(self):
+                return self.payload
+
+        def fetch(request, timeout):
+            name = request.full_url.rsplit("/", 1)[-1]
+            self.assertIn(name, DATA_FILES)
+            return Response(files[name])
+
+        with patch.dict("prepare_dataset.GIT_BLOBS", expected), patch("prepare_dataset.urlopen", side_effect=fetch):
+            payloads, origin = retrieve(None)
+        self.assertEqual(payloads, files)
+        self.assertIn("GitHub", origin)
+
+    def test_retrieve_explains_offline_failure(self):
+        with patch("prepare_dataset.urlopen", side_effect=OSError("offline")), patch("prepare_dataset.sleep"):
+            with self.assertRaisesRegex(RuntimeError, "DATA_SOURCE_UNAVAILABLE") as caught:
+                retrieve(None)
+        self.assertIn("GroupLens", str(caught.exception))
+        self.assertIn("GitHub", str(caught.exception))
 
 if __name__ == "__main__":
     unittest.main()
