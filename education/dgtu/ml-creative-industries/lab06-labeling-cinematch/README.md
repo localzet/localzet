@@ -1,0 +1,38 @@
+# ЛР № 6 — Разметка и подготовка данных · CineMatch
+
+**ДГТУ · группа МИК21**  
+Дисциплина «Проект — применение машинного обучения в креативных индустриях».
+
+**Проект:** CineMatch, персональные рекомендации фильмов на основе MovieLens Latest Small. Эта работа продолжает [ЛР № 4 (реестр и Data Card)](../lab04-data-registry-cinematch/README.md) и [ЛР № 5 (EDA)](../lab05-eda-cinematch/README.md), а не копирует геометрические плакаты из демонстрационного примера преподавателя.
+
+## Артефакты, необходимые для сдачи
+
+| Материал | Файл | Что проверяется |
+|---|---|---|
+| **Инструкция разметчика v1** | [annotation_guideline.md](annotation_guideline.md) | наблюдаемые критерии, границы, исключения, разрешение споров |
+| **Пилотная разметка** | [pilot_labels_v1.csv](pilot_labels_v1.csv) | 12 реальных train-оценок, исходная шкала и две реализации класса |
+| **Статистика и альтернативный контроль** | [annotation_results.md](annotation_results.md) | распределения, совпадение кода 12/12 и оговорка об отсутствии второго эксперта |
+| **Версия набора v1.0.0** | [data_manifest_v1.json](data_manifest_v1.json) | SHA исходных CSV, raw→clean, размеры split, наблюдаемые ограничения |
+| **Код подготовки** | [prepare_dataset.py](prepare_dataset.py) | проверка источника, очистка, метки, группы, train-IDF, выходные артефакты |
+| **Тесты** | [test_prepare.py](test_prepare.py) | шкала, дубли, временные группы, train-only IDF, пилот |
+| **Описание воспроизведения** | [preprocessing.md](preprocessing.md) | порядок обработки и правила исключений |
+| **Обновлённая Data Card v1.2** | [data_card_update.md](data_card_update.md) | репрезентативность, право, происхождение, новые ограничения |
+
+[Открыть лабораторную в Google Colab](https://colab.research.google.com/github/localzet/localzet/blob/main/education/dgtu/ml-creative-industries/lab06-labeling-cinematch/Lab6_CineMatch_Labeling_MIK21.ipynb)
+
+## Запуск
+
+```bash
+python -m unittest -v test_prepare
+python prepare_dataset.py --source /path/to/ml-latest-small.zip --output prepared
+# Либо при наличии сети (официальный ZIP, резервом — зеркало с SHA-контролем):
+python prepare_dataset.py --output prepared
+```
+
+Требуется Python 3.11+; внешние ML-библиотеки для подготовки не нужны. Результаты выполнения сохраняются **только локально** в `prepared/` (исключено из Git), включая `clean_interactions.csv`, разбиения train/validation/test, `exclusions.csv`, `train_idf.json`, `pilot_labels.csv`, `manifest.json` с SHA-256 входных и выходных файлов. Никаких исходных MovieLens CSV с псевдонимными userId в публичном репозитории нет.
+
+## Главные результаты и границы достоверности
+
+Публичные исходные blob-объекты MovieLens проверены: **100 836** оценок и **610** пользователей, **0** дубликатов пары `userId+movieId`, **0** сиротских оценок, численность split **62 070 / 19 067 / 19 699**. Пилот разметки — **12 реальных train-наблюдений** с равным числом классов, программное совпадение **12/12**. Локальные unit-тесты: **5/5**. Full-file Python run в текущем окружении не проводился, потому что загрузка ZIP отсюда недоступна: для этого предусмотрен запуск на Colab или локально. Встроенная проверка двух алгоритмов **не** заменяет межэкспертное согласие.
+
+Оригинальные данные: [GroupLens MovieLens Latest Small](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html), исследовательское использование с обязательной атрибуцией. Никакой коммерческой лицензии или гарантий независимой пользовательской полезности не заявляется.
