@@ -1,0 +1,30 @@
+{
+  "catalog_universe": "all movieIds from movies.csv",
+  "data_version": "cinematch-labels-v1.0.0",
+  "evaluation": "macro per user, unjudged candidates contribute zero gain only in offline proxy",
+  "evaluation_denominators": "NDCG among users with IDCG>0; recall/HR among users with positive holdout",
+  "evaluation_split": "validation_only",
+  "exclude_seen": "only user's train-rated movieIds",
+  "input_git_blob_sha1": {
+    "links.csv": "d5ccfdf196ebe5b7bbd09d505ea8ca263ecc33ae",
+    "movies.csv": "2c1b2e74fe24d0fc851aa9745702fcd7777f690a",
+    "ratings.csv": "51974adb19938bda0e00b2d8c051438fb33893f0",
+    "tags.csv": "224e0c167e6cdd71ec4c6fd9da208ee5a286caaf"
+  },
+  "k": 10,
+  "label_rule": "lab06-grade-v1",
+  "ndcg_gain": "2**relevance-1; discount log2(rank+1), relevance 0,1,2",
+  "randomness": "none",
+  "recall_hitrate_positive": "relevance == 2",
+  "score": "number of train ratings >= 4.0 for each film",
+  "seed": null,
+  "split_counts": {
+    "test": 19699,
+    "train": 62070,
+    "validation": 19067
+  },
+  "split_method": "per-user temporal groups 60/20/20, as in Lab 6",
+  "test_used": false,
+  "tie_break": "movieId ascending",
+  "version": "cinematch-popularity-baseline-v1.0.0"
+}
