@@ -12,6 +12,7 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.request import Request, urlopen
+from time import sleep
 
 VERSION = "cinematch-labels-v1.0.0"
 DATA_FILES = ("movies.csv", "ratings.csv", "tags.csv", "links.csv")
@@ -30,33 +31,72 @@ def git_blob_sha(data: bytes) -> str:
     return hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
 
 
+def verify_source(files: dict[str, bytes], origin: str) -> None:
+    """Не допускаем незаметной смены версии CSV при смене сервера."""
+    for name in DATA_FILES:
+        if name not in files:
+            raise ValueError(f"Нет файла {name} в источнике {origin}")
+        actual = git_blob_sha(files[name])
+        if actual != GIT_BLOBS[name]:
+            raise ValueError(
+                f"Контрольная сумма {name} из {origin} не совпадает: "
+                f"{actual} (ожидали {GIT_BLOBS[name]}). "
+                "Нужен датасет зафиксированной версии; не отключайте эту проверку."
+            )
+
+
 def retrieve(source: str | None) -> tuple[dict[str, bytes], str]:
+    """Сначала зафиксированное зеркало, затем официальный архив или локальный ZIP."""
     if source:
-        path = Path(source)
+        path = Path(source).expanduser()
         if path.is_dir():
             files = {name: (path / name).read_bytes() for name in DATA_FILES}
         elif path.is_file() and zipfile.is_zipfile(path):
             with zipfile.ZipFile(path) as z:
                 files = {name: z.read(f"ml-latest-small/{name}") for name in DATA_FILES}
         else:
-            raise ValueError("--source указывает на архив ml-latest-small.zip или каталог CSV")
-        origin = str(path)
-    else:
-        def fetch(url: str) -> bytes:
-            with urlopen(Request(url, headers={"User-Agent": "MovieLens-educational-audit"}), timeout=40) as r:
-                return r.read()
+            raise ValueError(
+                "--source: нужен каталог с четырьмя CSV или файл ml-latest-small.zip; "
+                f"получено {path!s}"
+            )
+        verify_source(files, str(path))
+        return files, str(path)
+
+    def fetch(url: str) -> bytes:
+        last_error = None
+        for attempt in range(2):
+            try:
+                with urlopen(Request(url, headers={"User-Agent": "CineMatch-educational-audit/1.0"}), timeout=30) as r:
+                    return r.read()
+            except Exception as exc:
+                last_error = exc
+                if attempt == 0:
+                    sleep(1)
+        raise RuntimeError(f"Не удалось скачать {url}: {last_error}") from last_error
+
+    failures = []
+    for origin in ("GitHub (проверенная версия)", "GroupLens (официальный архив)"):
         try:
-            with zipfile.ZipFile(io.BytesIO(fetch(OFFICIAL_URL))) as z:
-                files = {name: z.read(f"ml-latest-small/{name}") for name in DATA_FILES}
-            origin = OFFICIAL_URL
-        except Exception:
-            files = {name: fetch(MIRROR_URL + name) for name in DATA_FILES}
-            origin = MIRROR_URL + " (SHA-1 verified)"
-    for name, payload in files.items():
-        actual = git_blob_sha(payload)
-        if actual != GIT_BLOBS[name]:
-            raise ValueError(f"Иная версия {name}: {actual} != {GIT_BLOBS[name]}")
-    return files, origin
+            if origin.startswith("GitHub"):
+                files = {name: fetch(MIRROR_URL + name) for name in DATA_FILES}
+            else:
+                with zipfile.ZipFile(io.BytesIO(fetch(OFFICIAL_URL))) as z:
+                    files = {name: z.read(f"ml-latest-small/{name}") for name in DATA_FILES}
+            verify_source(files, origin)
+            print(f"Источник данных: {origin}; SHA подтверждён", flush=True)
+            return files, origin
+        except Exception as exc:
+            failures.append(f"{origin}: {type(exc).__name__}: {exc}")
+            print(f"Источник недоступен/не прошёл проверку: {failures[-1]}", flush=True)
+
+    raise RuntimeError(
+        "DATA_SOURCE_UNAVAILABLE: не удалось получить проверенную версию MovieLens.\n"
+        + "\n".join(failures)
+        + "\nМожно загрузить файл ml-latest-small.zip с GroupLens в Colab "
+        "и повторить запуск с --source ml-latest-small.zip. "
+        "Если контрольная сумма официального архива не совпадает с зафиксированным зеркалом, "
+        "не отключайте проверку: используйте проверенную версию или обновите Data Card."
+    )
 
 
 def read_csv(payload: bytes) -> list[dict[str, str]]:
