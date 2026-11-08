@@ -1,0 +1,6 @@
+prepared/
+ml-latest-small/
+ml-latest-small.zip
+*.zip
+__pycache__/
+*.py[cod]
