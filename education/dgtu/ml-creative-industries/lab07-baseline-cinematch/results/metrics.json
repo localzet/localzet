@@ -1,0 +1,18 @@
+{
+  "baseline": "cinematch-popularity-baseline-v1.0.0",
+  "data_version": "cinematch-labels-v1.0.0",
+  "settings_sha256": "c92671b51534519148008188261bfd255dc0b5e975932355fcf3c2b724e39b74",
+  "evaluated_users": 610,
+  "users_with_positive_holdout": 583,
+  "users_with_graded_holdout": 604,
+  "train_rows": 62070,
+  "validation_rows": 19067,
+  "unique_catalog_movies": 9742,
+  "train_scored_movies": 4485,
+  "mean_ndcg_at_10": 0.08785510932151701,
+  "mean_recall_at_10": 0.06670561012231511,
+  "mean_hitrate_at_10": 0.3602058319039451,
+  "users_with_hit": 210,
+  "test_used_for_model_or_scoring": false,
+  "evaluation_caveat": "Offline proxy: missing ratings are unjudged, not proven negatives."
+}
