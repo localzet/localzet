@@ -64,17 +64,30 @@ security         auth, tokens, encryption experiments, hardening and diagnostics
 
 ---
 
-### Open-source contributions
+### Selected upstream contributions
 
-I contribute to upstream projects through bug fixes, tests, documentation and infrastructure improvements.
+Contributing to established open-source projects in language runtimes, networking, CI infrastructure and web platforms.
 
-<p align="center">
-  <a href="https://localzet.github.io/contributions/">
-    <img src="https://localzet.github.io/contributions/summary.svg" width="100%" alt="Open-source contribution statistics" />
-  </a>
-</p>
+**Merged upstream**
 
-[Explore my contribution dashboard →](https://localzet.github.io/contributions/) — public pull requests, issues, review status and project activity.
+| Project | Contribution |
+| --- | --- |
+| [CPython](https://github.com/python/cpython) | [Improve tuple hashing diagnostics by identifying the failing item](https://github.com/python/cpython/pull/161496) |
+| [3x-ui](https://github.com/MHSanaei/3x-ui) | [Fix inbound handling in non-multi-user configurations](https://github.com/MHSanaei/3x-ui/pull/2649) |
+| [VKUI](https://github.com/VKCOM/VKUI) | [Document interactive tooltips with an actionable example](https://github.com/VKCOM/VKUI/pull/10536) |
+
+**Other submitted upstream work**
+
+| Project | Contribution |
+| --- | --- |
+| [PHP](https://github.com/php/php-src) | [Route captured PHP-FPM worker output to syslog](https://github.com/php/php-src/pull/25257) |
+| [Xray-core](https://github.com/XTLS/Xray-core) | [Add direct UDP DNS resolution without the routing dispatcher](https://github.com/XTLS/Xray-core/pull/7380) |
+| [Mihomo](https://github.com/MetaCubeX/mihomo) | [Make console log timestamps configurable](https://github.com/MetaCubeX/mihomo/pull/3447) |
+| [GitHub Actions Runner](https://github.com/actions/runner) | [Prevent UTF-16 surrogate splitting in telemetry truncation](https://github.com/actions/runner/pull/4841) |
+| [Telegram Web A](https://github.com/Ajaxy/telegram-tt) | [Preserve captions in prepared bot media previews](https://github.com/Ajaxy/telegram-tt/pull/567) |
+| [KPHP](https://github.com/VKCOM/kphp) | [Reject statically known scalar arguments to count()](https://github.com/VKCOM/kphp/pull/1716) |
+
+[Explore all external contributions and live review status →](https://localzet.github.io/contributions/)
 
 ---
 
