@@ -64,6 +64,20 @@ security         auth, tokens, encryption experiments, hardening and diagnostics
 
 ---
 
+### Open-source contributions
+
+I contribute to upstream projects through bug fixes, tests, documentation and infrastructure improvements.
+
+<p align="center">
+  <a href="https://localzet.github.io/contributions/">
+    <img src="https://localzet.github.io/contributions/summary.svg" width="100%" alt="Open-source contribution statistics" />
+  </a>
+</p>
+
+[Explore my contribution dashboard →](https://localzet.github.io/contributions/) — public pull requests, issues, review status and project activity.
+
+---
+
 ### Technology map
 
 ```txt
